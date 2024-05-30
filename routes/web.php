@@ -2,7 +2,13 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 
+// Otras rutas...
+
+// Rutas de registro de usuarios
+Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [RegisterController::class, 'register']);
 
 Route::get('/', function () {
     return redirect()->route("home");
@@ -11,7 +17,7 @@ Route::get("/acerca-de", function () {
     return view("misc.acerca_de");
 })->name("acerca_de.index");
 Route::get("/soporte", function(){
-    return redirect("https://parzibyte.me/blog/contrataciones-ayuda/");
+    return redirect("#");
 })->name("soporte.index");
 
 Auth::routes([

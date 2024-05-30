@@ -20,7 +20,7 @@
                                        name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
-                                <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" rol="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
@@ -36,7 +36,7 @@
                                        name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
-                                <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" rol="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
@@ -53,7 +53,7 @@
                                        required autocomplete="new-password">
 
                                 @error('password')
-                                <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" rol="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
@@ -69,7 +69,21 @@
                                        name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-
+                <div class="form-group row">
+                    <label for="rol" class="col-md-4 col-form-label text-md-right">Rol</label>
+                        <div class="col-md-6">
+                            <select id="rol" class="form-control @error('rol') is-invalid @enderror" name="rol" required>
+                                @foreach($roles as $rol)
+                                    <option value="{{ $rol->id }}">{{ $rol->nombre_rol }}</option>
+                                @endforeach
+                            </select>
+                            @error('rol')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                    </div>
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

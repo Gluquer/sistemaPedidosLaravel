@@ -25,6 +25,8 @@ class CreateProductoVendidosTable extends Migration
             $table->string("codigo_barras");
             $table->decimal("precio", 9, 2);
             $table->decimal("cantidad", 9, 2);
+
+           
             $table->timestamps();
         });
     }

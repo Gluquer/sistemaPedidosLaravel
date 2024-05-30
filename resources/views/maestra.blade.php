@@ -1,45 +1,6 @@
-{{--
 
-  ____          _____               _ _           _
- |  _ \        |  __ \             (_) |         | |
- | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___
- |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
- | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
- |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
-         __/ |                               __/ |
-        |___/                               |___/
-
-    Blog:       https://parzibyte.me/blog
-    Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
-    Contacto:   https://parzibyte.me/blog/contacto/
-
-    Copyright (c) 2020 Luis Cabrera Benito
-    Licenciado bajo la licencia MIT
-
-    El texto de arriba debe ser incluido en cualquier redistribucion
---}}
 <!doctype html>
 <html lang="es">
-<!--
-
-  ____          _____               _ _           _
- |  _ \        |  __ \             (_) |         | |
- | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___
- |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
- | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
- |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
-         __/ |                               __/ |
-        |___/                               |___/
-
-    Blog:       https://parzibyte.me/blog
-    Ayuda:      https://parzibyte.me/blog/contrataciones-ayuda/
-    Contacto:   https://parzibyte.me/blog/contacto/
-
-    Copyright (c) 2020 Luis Cabrera Benito
-    Licenciado bajo la licencia MIT
-
-    El texto de arriba debe ser incluido en cualquier redistribucion
--->
 
 <head>
     <meta charset="utf-8">
@@ -117,7 +78,6 @@
     </div>
 </nav>
 <script type="text/javascript">
-    // Tomado de https://parzibyte.me/blog/2019/06/26/menu-responsivo-bootstrap-4-sin-dependencias/
     document.addEventListener("DOMContentLoaded", () => {
         const menu = document.querySelector("#menu"),
             botonMenu = document.querySelector("#botonMenu");
@@ -130,16 +90,8 @@
     @yield("contenido")
 </main>
 <footer class="px-2 py-2 fixed-bottom bg-dark">
-    <span class="text-muted">Punto de venta en Laravel
-        <i class="fa fa-code text-white"></i>
-        con
-        <i class="fa fa-heart" style="color: #ff2b56;"></i>
-        por
-        <a class="text-white" href="//parzibyte.me/blog">Parzibyte</a>
-        &nbsp;|&nbsp;
-        <a target="_blank" class="text-white" href="//github.com/parzibyte/sistema_ventas_laravel">
-            <i class="fab fa-github"></i>
-        </a>
+    <span class="text-muted">Sistema de Ventas
+        <i class="fa text-white"></i>
     </span>
 </footer>
 </body>
